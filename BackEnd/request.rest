@@ -1,0 +1,12 @@
+###  
+POST http://localhost:5000/home 
+Content-Type: application/json
+
+{
+    "type": "event",
+    "title": "event terkini apa yaaaa",
+    "imagePath": "uhuy.jpeg"
+}
+
+###
+GET http://localhost:5000/home

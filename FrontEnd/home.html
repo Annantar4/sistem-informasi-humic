@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Humic Engineering</title>
+    <link rel="stylesheet" href="styles1.css">
+    <script defer src="app1.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Humic Engineering Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Research Products</a></li>
+                <li><a href="#">Our Activity</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider Section -->
+    <section class="slider-section">
+        <div class="slider-container">
+            <button class="slider-btn prev">&lt;</button>
+            <div id="slider" class="slider"></div>
+            <button class="slider-btn next">&gt;</button>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section class="latest-news">
+        <h2>LATEST NEWS</h2>
+        <div id="latest-news-container" class="news-container"></div>
+    </section>
+
+    <!-- Upcoming Event Section -->
+   
+    <section class="upcoming-event">
+        <h2>Upcoming Event</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+        
+        <div id="upcoming-events-container" class="events-container">
+            <!-- Event cards will be dynamically added here -->
+        </div>
+        <div class="button-container">
+            <button id="see-all-events-btn" style="display: none;" class="see-all-btn">See All Events</button>
+        </div>
+        
+    </section>
+
+
+
+    <script src="app1.js"></script>
+    <script>
+      window.onload = function() {
+        fetchHomeContent();
+      };
+    </script>
+
+</body>
+</html>

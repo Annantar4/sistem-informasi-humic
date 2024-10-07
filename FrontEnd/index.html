@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Home Page</h1>
+
+  <!-- Slider Section -->
+  <section id="slider-section">
+    <h2>Slider</h2>
+    <div id="slider" class="slider">
+      <!-- Gambar slider akan dimasukkan di sini -->
+    </div>
+    <button id="prev" class="slider-btn">Prev</button>
+    <button id="next" class="slider-btn">Next</button>
+  </section>
+
+  <!-- Latest News Section -->
+  <section id="news-section">
+    <h2>Latest News</h2>
+    <div id="latest-news"></div>
+  </section>
+
+  <script src="app.js"></script>
+  <script>
+    window.onload = function() {
+      fetchHomeContent();
+    };
+  </script>
+</body>
+</html>
